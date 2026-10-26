@@ -59,3 +59,14 @@ A Vite fejlesztői szerver önmagában nem futtatja a Vercel `api/` függvények
 - A jelenlegi verzió játékprototípus. A PeerJS jelzőszolgáltatás és NAT/firewall beállítások befolyásolhatják a közvetlen kapcsolatot.
 - A Neon felhőmentés a közös készletet és játékmetaadatokat menti. A 3D-s világ minden elemének (például a pontos karakterpozícióknak, a tárgyak világpozícióinak és az NPC-k állapotának) teljes, szerver-authoritatív szinkronizálása még külön fejlesztést igényel.
 - Nincs felhasználói fiókrendszer vagy moderáció. Ne használjátok érzékeny személyes adatok tárolására.
+
+## Realisztikusabb asztali játékmegjelenés
+
+A vizuális frissítés tartalmaz ACES filmic tone mappinget, nagyobb árnyéktérképet, több fényforrást, helyben generált fű- és fakéreg-textúrákat, rétegzett lombkoronákat, faágakat, sziklákat, füves részleteket és kanyargó földutat. A kezelőfelület sötét, asztali játékokhoz hasonló keretet kapott. A textúrák helyben generálódnak, ezért nem kell külső képfájlokat letölteni.
+
+Build és telepítés:
+- `npm install`
+- `npm run build`
+- Vercel Output Directory: `dist`
+
+Megjegyzés: a teljes buildet ebben a környezetben nem sikerült lefuttatni, ezért telepítés előtt ellenőrizd a Vercel build logját. Ez a frissítés a meglévő Three.js geometrikus karaktereket és játéklogikát tartja meg; fotórealisztikus minőséghez külön, részletes 3D karaktermodellekre, PBR anyagokra és animációs assetekre is szükség lenne.
