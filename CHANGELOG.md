@@ -1,9 +1,8 @@
-# Változások – Neon stabilizálás
+# Változások
 
-- A Neon API külön tulajdonosi és meghívási tokent használ.
-- A tokenek SHA-256 lenyomatként kerülnek az adatbázisba.
-- A vendég csak a megfelelő meghívókóddal olvashatja a mentést; íráshoz a házigazda titka szükséges.
-- A mentés legfeljebb 100 KB, a szobakód és a token formátuma ellenőrzött.
-- A mentési időzítő nem indul újra minden játékállapot-változásnál.
-- A mentés verziószáma monoton növekszik, így a vendég megbízhatóbban észleli a frissítéseket.
-- A telepítési útmutató pontosítva, `.gitignore` hozzáadva.
+## Desktop Adventure UI
+- A régi hosszú, görgetős landing oldal helyett teljes képernyős játékelrendezés.
+- A 3D világ folyamatosan látható; a küldetések, hátizsák, meghívások, bolt, barkács, jutalmak és beállítások külön játékon belüli fülekre kerültek.
+- Új játékos oldalsáv, pontszámok, aktuális cél és billentyűsúgó.
+- Dudu és Bubu karaktermodelljei lábakat, karokat, mancsokat, részletesebb pofát és járásanimációt kaptak.
+- Reszponzív elrendezés kisebb képernyőkre.
